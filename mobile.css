@@ -1,0 +1,18 @@
+header, nav{
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+h1 {
+    padding: 1
+    0px;
+}
+nav {
+    width: 80vw;
+    justify-items: center;
+    align-items: center;
+}
+
+a {
+    text-align: center;
+    width: 90vw;
+}
