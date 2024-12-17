@@ -1,0 +1,46 @@
+/* Responsiveness setting */
+
+@media screen and (max-width: 1069px){
+    .home-studio-image {
+        width: 100%;
+    }
+    h1, header h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 746px){
+    .professional-skills-container{
+        justify-content: center;
+    }
+    h3{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:433px){
+    nav{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 327px){
+    .skills-children {
+        width: 90%;
+    }
+    .skills-image{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 349px){
+    .contact-section {
+        height: 100vh;
+    }
+    .custom-phone-frame{
+        width: 95%;
+        height: 96%;
+    }
+    .custom-phone-screen{
+        width: 96%;
+        height: 95%;
+    }
+}
