@@ -1,32 +1,36 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-
 body{
     color: #fff7db;
     background-color: #9e8f70;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100%;
     gap: 2em;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: uppercase;
+}
+h1, h2 {
+    text-align: center;
 }
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100%;
     gap: 2em;
 }
 img {
+    max-width: 90%;
+    height: auto;
     border-radius: 1.8em;
     border: .2em solid #fff7db;
 }
@@ -41,4 +45,7 @@ a {
 }
 button:hover {
     background-color: #a56238;
+}
+footer {
+    padding: 4em 0;
 }
