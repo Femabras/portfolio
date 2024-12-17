@@ -172,7 +172,6 @@ main {
     justify-content: center;
     align-items: center;
     background-image: url("../assets/images/get-in-touch-background.png");
-    height: 100vh;
     width: 100%;
 }
 .custom-phone-frame {
