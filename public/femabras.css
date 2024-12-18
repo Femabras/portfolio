@@ -15,20 +15,32 @@ body{
     width: 100%;
     gap: 2em;
     justify-content: center;
-    font-family: "Roboto", serif;
+    line-height: 1.6em;
+    word-spacing: .3em;
+    letter-spacing: .06em;
+    
 }
 h1{
     font-family: "Playfair Display", serif;
-    padding-top: .4em;
+    padding-top: 1em;
+    padding-bottom: .3em;
     font-size: 3rem;
     text-transform: uppercase;
 }
 h2 {
-    font-weight: 400;
+    font-weight: 500;
+    font-size: 1.7rem;
 }
 h1, h2 {
+    
     text-align: center;
     color:#FBFFFE;
+}
+.advitise{
+    max-width: 45em;
+    width: 90%;
+    text-align: justify;
+    font-size: 1.2rem;
 }
 main{
     display: flex;
@@ -48,6 +60,7 @@ button{
     border-radius: 1em;
     border: 0em solid;
     background-image: linear-gradient(to bottom right, #237D67, #001514);
+    font-size: 1em;
 }
 button:hover {
     background-image: linear-gradient(to right, #01403D, #D46969);
