@@ -1,115 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Brás | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernando Brás — Full-stack web engineer</title>
+  <meta name="description" content="Fernando Brás, full-stack web engineer in Luanda, Angola. Founder and only engineer of Femabrás, a trilingual web platform built on Next.js, React, TypeScript and Go.">
+  <meta name="author" content="Fernando Brás">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfffe" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#001514" media="(prefers-color-scheme: dark)">
 
-    <link rel="stylesheet" href="./public/main.css">
-    <link rel="stylesheet" href="./public/mobile.css" media="screen and (max-width: 501px)">
-    <link rel="stylesheet" href="./public/tablet.css" media="screen and (min-width: 502px) and (max-width: 1069px)">
-    <link rel="stylesheet" href="./public/same-settings.css">
+  <link rel="canonical" href="https://femabras.github.io/portfolio/">
+  <link rel="alternate" hreflang="en" href="https://femabras.github.io/portfolio/">
+  <link rel="alternate" hreflang="pt" href="https://femabras.github.io/portfolio/public/portuguese-page.html">
+  <link rel="alternate" hreflang="x-default" href="https://femabras.github.io/portfolio/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Fernando Brás — Full-stack web engineer">
+  <meta property="og:description" content="Founder and only engineer of Femabrás: Next.js, React, TypeScript and Go, from the first brief to production.">
+  <meta property="og:url" content="https://femabras.github.io/portfolio/">
+  <meta property="og:image" content="https://femabras.github.io/portfolio/assets/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fernando Brás, full-stack web engineer">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_PT">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./public/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fernando Brás",
+    "jobTitle": "Full-stack web engineer",
+    "url": "https://femabras.github.io/portfolio/",
+    "email": "mailto:suchel@femabras.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Luanda", "addressCountry": "AO" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "GD Goenka University" },
+    "sameAs": ["https://www.linkedin.com/in/suchel/", "https://femabras.com"]
+  }
+  </script>
 </head>
 <body>
-    <!-- Header content area -->
-    <header>
-        
-        <!-- Navbar content area -->
-        <nav>
-            <p class="header-text-color"><a class="header-text-color" href="./index.html">English </a>| <a class="header-text-color" href="./public/portuguese-page.html">Portuguese</a></p>
-            <button class="nav-button">
-                <a class="header-text-color" href="./assets/pdf/fernando-bras-resume.pdf" download="Fernando Brás - Resumé">
-                    Download The Resumé
-                </a>
-            </button>
-        </nav>
-        
-        <!-- Welcome section area -->
-        <section class="welcome-section">
-            
-            <!-- Image tag for home studio image -->
-            <img class="home-studio-image" src="./assets/images/home-studio.png" alt="Home Studio Picture">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-            <!-- Welcome content container -->
-            <div class="welcome-section-container">
-                <h1 class="header-text-color">Fernando Brás</h1>
-                <h2 class="welcome-section-h2 header-text-color">
-                    <span class="green">Web</span> & <span class="blue">Mobile </span>Developer<br>Music Producer<br>Graphic Designer<br>Software Engineer
-                </h2>
-                <p class="paragraph-bottom-padding header-text-color">You can download my resume in PDF format.<br> The file size is approximately 1MB</p>
-                <button>
-                    <a class="header-text-color" href="./assets/pdf/fernando-bras-resume.pdf" download="Fernando Brás - Resumé">Download</a>
-                </button>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html">
+        <img class="brand-mark" src="./assets/images/favicon.svg" alt="" width="30" height="30">
+        <span>Fernando Brás</span>
+      </a>
+      <nav class="site-nav" aria-label="Sections">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#process">How I work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <span aria-current="true" lang="en">EN</span>
+          <a href="./public/portuguese-page.html" hreflang="pt" lang="pt">PT</a>
+        </div>
+        <a class="btn btn-secondary btn-small" href="./assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+          Résumé
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Full-stack web engineer · Luanda, Angola · Remote</p>
+            <h1 id="hero-title">I build web products end to end, from the first brief to production.</h1>
+            <p class="hero-lede">I'm Fernando Brás. I founded Femabrás and I'm its only engineer: a trilingual web platform for Angola on Next.js, React, TypeScript and Go, live since July 2026. I own features from the API contract to the last loading state, and I write the tradeoffs down before I build.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">Read the case study</a>
+              <a class="btn btn-secondary" href="./assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+                Download résumé <span class="btn-meta">PDF, 1 page</span>
+              </a>
             </div>
-        </section>
-    </header> <!-- End of the header content area -->
-    
-    <!-- Main contents area -->
-    <main>
+          </div>
 
-        <!-- Introduction section area  -->
-        <section class="introduction-section">
-            <img class="passport-photo" src="./assets/images/fernando-bras-photo.png" alt="Fernando Bras' passport type photo">
-            <h2 class="introduction-h2">I'm Mobile and Web Developer</h2>
-            <p class="introduction-paragraph">
-                Hi, I'm Fernando! I have a passion for blending technology and creativity. With a degree in Computer Science and Engineering from GD Goenka University, India, I’ve spent over 17 years in music production and 9 years developing web and mobile applications. Whether it's designing beautiful websites, creating intuitive mobile apps, or producing music, I love turning ideas into reality.
-                I’m comfortable working with languages and tools like C, C#, Go, Java, Swift, Kotlin, JavaScript, Python, HTML, CSS, PHP, SQL, and I have experience with frameworks like Flutter and React Native. On the creative side, I work with Adobe Suite such as Illustrator to design clean, user-friendly visuals that bring projects to life.
-                I’m always eager to take on new challenges and collaborate with clients from all over the world to create something unique and meaningful. Let’s work together to bring your vision to life!
-            </p>
-        </section>
-
-        <!-- Professional skills section area -->
-        <section class="professional-skills-section">
-            <h2 class="professional-skills-h2">Professional Skills</h2>
-            <div class="professional-skills-container">
-                <div class="skills-children">
-                    <img class="skills-image" src="./assets/images/web-development.png" alt="Web development coding screenshot">
-                    <h3>Web Development</h3>
-                    <p class="paragraph-bottom-padding">Proficient in HTML, CSS, JavaScript, and C#.</p>
-                </div>
-                
-                <div class="skills-children">
-                    <img class="skills-image" src="./assets/images/mobile-development.png" alt="Mobile development image demostration">
-                    <h3>Mobile Development</h3>
-                    <p class="paragraph-bottom-padding">Experienced in Go, Kotlin, Swift, Dart,  and framework such as React and Flutter.</p>
-                </div>
-                
-                <div class="skills-children">
-                    <img class="skills-image" src="./assets/images/database-management.png" alt="Database management icon image">
-                    <h3>Database Management</h3>
-                    <p class="paragraph-bottom-padding">Basic knowledge of SQL and database concepts.</p>
-                </div>
+          <aside class="profile-card" aria-label="Profile">
+            <div class="profile-head">
+              <img class="profile-photo" src="./assets/images/fernando-bras-photo.png" alt="Portrait of Fernando Brás" width="72" height="72">
+              <div>
+                <p class="profile-name">Fernando Brás</p>
+                <p class="profile-role">Full-stack web engineer</p>
+              </div>
             </div>
-        </section>
+            <dl class="facts">
+              <div><dt>Based in</dt><dd>Luanda, Angola (UTC+1)</dd></div>
+              <div><dt>Looking for</dt><dd>A remote web engineering role</dd></div>
+              <div><dt>Languages</dt><dd>Portuguese (native), English; basic French, Spanish and Hindi</dd></div>
+              <div><dt>Reach me</dt><dd><a href="mailto:suchel@femabras.com">suchel@femabras.com</a></dd></div>
+            </dl>
+          </aside>
+        </div>
 
-        <section class="contact-section">
-            <div class="custom-phone-frame">
-                <div class="custom-phone-screen">
-                    <h2 class="side-spacing">Get In Touch</h2>
-                    <p class="side-spacing">If you're looking for a professional partner to bring your mobile application or website  vision to life, I'm here to help. Click the buttons below to get in touch, and let's discuss how I can add value to your project and ensure its success!</p>
-                    <button class="contact-button">
-                        <a class="contact-link" href="tel:+244943073091">Make a call</a>
-                    </button>
-                    <button class="contact-button">
-                        <a class="contact-link" href="mailto:suchel@femabras.com">E-mail me</a>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
+        <ul class="stats">
+          <li><span class="stat-value">15 weeks</span><span class="stat-label">from first commit to production</span></li>
+          <li><span class="stat-value">16 releases</span><span class="stat-label">in the first seven weeks live</span></li>
+          <li><span class="stat-value">3 languages</span><span class="stat-label">Portuguese, English and French, checked in CI</span></li>
+          <li><span class="stat-value">50+ ADRs</span><span class="stat-label">significant decisions, written down first</span></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Footer content area -->
-    <footer>
-        <small>
-            <div class="footer-link-container">
-                <a class="footer-font-size" href="https://www.linkedin.com/in/suchel/" target="_blank">LinkedIn</a>
-                <a class="footer-font-size" href="https://www.tiktok.com/@femabras" target="_blank">TikTok</a>
-                <a class="footer-font-size" href="./public/femabras-page.html">Website</a>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="case-head">
+          <div>
+            <p class="eyebrow">Case study</p>
+            <h2 class="section-title" id="work-title">Femabrás</h2>
+            <p class="section-intro">A Portuguese-first web platform for everyday life in Angola. Live today: football predictions, four browser games including real-time chess, a dashboard for partner tipsters and an owner console. Built and in pre-release: an ATM finder with a self-hosted map, the first step toward letting people report which machines near them have cash.</p>
+          </div>
+          <a class="btn btn-secondary" href="https://femabras.com/en" target="_blank" rel="noopener">
+            Visit femabras.com
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </a>
+        </div>
+
+        <dl class="case-meta">
+          <div><dt>Role</dt><dd>Founder and only engineer: product, design, frontend, backend, infrastructure</dd></div>
+          <div><dt>Timeline</dt><dd>First commit in March 2026, live since July 6, 2026</dd></div>
+          <div><dt>Stack</dt><dd>Next.js 16, React 19, TypeScript, Tailwind CSS 4, Go, PostgreSQL, Redis</dd></div>
+          <div><dt>Languages</dt><dd>Portuguese (default), English, French</dd></div>
+        </dl>
+
+        <h3 class="subhead">Highlights</h3>
+        <ul class="cards">
+          <li class="card">
+            <span class="status status-live">Live</span>
+            <h3>Real-time online chess</h3>
+            <p>Send a friend an invite link and play in the browser. Server-Sent Events push every state change to both players and to anyone watching, and a server-side engine is the single source of truth: the client sends only the move itself, and the server validates it, applies it and broadcasts the new position. Your own move appears at once and rolls back if the server rejects it.</p>
+            <ul class="chips"><li>React</li><li>chess.js</li><li>SSE</li><li>Go</li><li>notnil/chess</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Live</span>
+            <h3>A predictions engine that answers to its backtest</h3>
+            <p>A Poisson score model in Go, using team strengths for leagues and Elo ratings for tournaments, prices results, goal totals and both-teams-to-score. A backtest grades past picks with the production code. League multi-leg picks hit 39–45% against 55–67% predicted, so they were switched off; tournament picks hit 59.8% against 56.7% and stayed.</p>
+            <ul class="chips"><li>Go</li><li>PostgreSQL</li><li>Asynq</li><li>Backtesting</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Live</span>
+            <h3>Releases you can trust</h3>
+            <p>Every push runs the full gate, builds Docker images to GHCR and deploys to a password-gated staging site. Production promotes the exact image that passed staging, from a button or a version tag, and CI refuses a tag that has no changelog entry.</p>
+            <ul class="chips"><li>GitHub Actions</li><li>Docker</li><li>GHCR</li><li>Caddy</li><li>Hetzner</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Live</span>
+            <h3>Three languages, no raw keys</h3>
+            <p>Portuguese by default, plus English and French, with per-locale metadata, hreflang and a sitemap. When two untranslated keys reached the chess board in every language, the parity check missed them, because all three files lacked the same keys. A usage check now fails CI whenever a string the code calls is missing from any language.</p>
+            <ul class="chips"><li>next-intl</li><li>Node</li><li>SEO</li><li>CI</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-pre">Pre-release</span>
+            <h3>A map without a maps bill</h3>
+            <p>The ATM finder draws with MapLibre GL from a self-hosted, Angola-only vector map: a 210 MB PMTiles archive on Cloudflare R2, read with HTTP range requests, so there is no commercial maps API to pay for or depend on. A visitor's location is rounded to about 1 km before it is sent, and never stored.</p>
+            <ul class="chips"><li>MapLibre GL</li><li>PMTiles</li><li>Cloudflare R2</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-pre">Pre-release</span>
+            <h3>Sessions that don't drop</h3>
+            <p>Access tokens last 15 minutes. The Next.js proxy refreshes them before they expire and rotates the refresh token, with a 30-second grace window for requests already in flight. The client shares one refresh between concurrent calls and retries a rejected call once, but never on the auth endpoints or in the partner area, where sign-in locks out after repeated failures and a replay would count as a second one.</p>
+            <ul class="chips"><li>Next.js proxy</li><li>JWT</li><li>Go</li><li>PostgreSQL</li></ul>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Also built</h3>
+        <ul class="also">
+          <li><span class="status status-live">Live</span><span>A dashboard for partner tipsters, with TanStack Query for server state and Zustand for drafts and the session</span></li>
+          <li><span class="status status-pre">Pre-release</span><span>Private music streaming: a presigned R2 URL minted per play, and one native audio player that meets iOS playback rules</span></li>
+          <li><span class="status status-live">Live</span><span>Snake, Match-3 with twelve levels, and Tic-Tac-Toe against four computer opponents</span></li>
+          <li><span class="status status-pre">Pre-release</span><span>A Gemini assistant behind a rule-based router, with per-account and platform-wide daily caps; no prompt or reply is logged</span></li>
+          <li><span class="status status-live">Live</span><span>A compliance layer: a first-visit cookie notice and versioned acceptance of the terms and privacy policy at sign-up</span></li>
+          <li><span class="status status-pre">Pre-release</span><span>A CV builder whose drafts never leave the visitor's device</span></li>
+          <li><span class="status status-live">Live</span><span>An owner console for partners, messages, feedback, products and uploads, with no inline script allowed by its Content-Security-Policy</span></li>
+          <li><span class="status status-pre">Pre-release</span><span>Design tokens for type, spacing density and motion that honor prefers-reduced-motion</span></li>
+        </ul>
+
+        <article class="story" aria-labelledby="story-title">
+          <p class="eyebrow">Debugging notes</p>
+          <h3 id="story-title">The sign-in button that only failed on a first visit</h3>
+          <dl class="story-grid">
+            <div>
+              <dt>Symptom</dt>
+              <dd>Google Sign-In failed for some visitors and worked for others. The production log showed both outcomes within the same hour.</dd>
             </div>
             <div>
-                <p class="footer-font-size">&#169 Fernando Brás. </p>
+              <dt>What made it tricky</dt>
+              <dd>It always worked when you reached /login by clicking through the site. It failed only when /login or /register was the first page you loaded, which is exactly the path that testing from inside the app never takes.</dd>
             </div>
-        </small>
-    </footer>
+            <div>
+              <dt>Cause</dt>
+              <dd>The link came from a helper that picks the API origin by checking <code>typeof window</code>. That answers where the code is running, which is the right question for <code>fetch</code> and the wrong one for an <code>href</code>. On a server-rendered first load, the internal Docker hostname was written into the page, and no browser can reach it. The URL also lacked the <code>/api</code> prefix the OAuth client is registered with.</dd>
+            </div>
+            <div>
+              <dt>Fix</dt>
+              <dd>A separate public API origin for anything the browser resolves, used by both links. The 34 <code>fetch</code> call sites keep the dual-mode helper, which now carries a comment naming where it must never appear.</dd>
+            </div>
+          </dl>
+          <p class="story-lesson">What I took from it: ask where a URL will be resolved, not where the code that builds it runs.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <p class="eyebrow">Process</p>
+        <h2 class="section-title" id="process-title">How I work</h2>
+        <p class="section-intro">The same habits on every change, whether it's a one-line fix or a new product area.</p>
+        <ol class="principles">
+          <li>
+            <h3>Decide before building</h3>
+            <p>Each significant choice becomes an architecture decision record with the options, their tradeoffs and a recommendation, written before the code. Femabrás has more than 50.</p>
+          </li>
+          <li>
+            <h3>One gate, locally and in CI</h3>
+            <p>gofmt, go vet, Go tests and govulncheck, then the i18n check, frontend tests, lint and a production build, cheapest first so a failure shows up in seconds.</p>
+          </li>
+          <li>
+            <h3>Fix the cause</h3>
+            <p>A fix names the actual cause. If the real fix is out of scope, it gets written down rather than hidden behind a patch.</p>
+          </li>
+          <li>
+            <h3>AI-assisted, owned by me</h3>
+            <p>I write the spec and the ADR, Claude Code implements in plan mode, and I review every diff before it's committed. Documentation ships in the same commit as the change.</p>
+          </li>
+        </ol>
+
+        <h3 class="subhead">How Femabrás fits together</h3>
+        <ol class="layers">
+          <li><span class="layer-name">Edge</span><p>Cloudflare for DNS, proxy and TLS, with R2 holding images, map tiles and private media</p></li>
+          <li><span class="layer-name">Web</span><p>Caddy in front of Next.js 16 (App Router, server rendering, next-intl, session proxy), React 19, TypeScript and Tailwind CSS 4</p></li>
+          <li><span class="layer-name">API</span><p>Go with Gin: a REST API with JWT sessions, per-route rate limits and Server-Sent Events for live games, plus Asynq background jobs</p></li>
+          <li><span class="layer-name">Data</span><p>PostgreSQL through GORM, and Redis for queues, rate limits and short-lived state</p></li>
+          <li><span class="layer-name">Delivery</span><p>GitHub Actions to GHCR, then staging, then production on Hetzner with Docker Compose; restic backups to Backblaze B2</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="eyebrow">Toolbox</p>
+        <h2 class="section-title" id="skills-title">Skills</h2>
+        <p class="section-intro">The tools behind Femabrás, grouped by where they sit.</p>
+        <div class="skill-groups">
+          <section class="skill-group" aria-labelledby="sk-frontend">
+            <h3 id="sk-frontend">Frontend</h3>
+            <ul class="chips"><li>React 19</li><li>Next.js 16</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Tailwind CSS 4</li><li>TanStack Query</li><li>Zustand</li><li>next-intl</li><li>MapLibre GL</li><li>Server-Sent Events</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-backend">
+            <h3 id="sk-backend">Backend and data</h3>
+            <ul class="chips"><li>Go</li><li>Gin</li><li>GORM</li><li>Asynq</li><li>REST API design</li><li>PostgreSQL</li><li>Redis</li><li>JWT sessions</li><li>Google OAuth</li><li>Rate limiting</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-delivery">
+            <h3 id="sk-delivery">Delivery</h3>
+            <ul class="chips"><li>GitHub Actions</li><li>Docker Compose</li><li>GHCR</li><li>Caddy</li><li>Cloudflare</li><li>R2</li><li>Hetzner</li><li>restic</li><li>Backblaze B2</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-practice">
+            <h3 id="sk-practice">Practice</h3>
+            <ul class="chips"><li>Accessibility</li><li>i18n</li><li>SEO</li><li>node:test</li><li>Go testing</li><li>CI quality gates</li><li>ADRs</li><li>Claude Code</li><li>Adobe Illustrator</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title" id="about-title">About me</h2>
+          <p>I studied Computer Science and Engineering at GD Goenka University in Gurugram, India, and graduated in 2019. Today I build from Luanda, mostly for people on phones and metered mobile data, which keeps me careful about page weight, loading states and what happens when a request fails.</p>
+          <p>Before code, there was music. I've produced music for years in Logic Pro X, and I design in Adobe Illustrator. Both taught me that small details decide whether something feels right, and that's the part of web work I enjoy most.</p>
+        </div>
+        <figure class="about-figure">
+          <img src="./assets/images/home-studio.webp" alt="Fernando at his desk, producing music on a keyboard in front of a monitor" width="606" height="614" loading="lazy" decoding="async">
+          <figcaption>My desk doubles as a music studio.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 class="section-title" id="contact-title">Let's talk</h2>
+            <p class="section-intro">I'm looking for a remote web engineering role on a product team that ships. Email is the best way to reach me.</p>
+            <p class="contact-note">Luanda, Angola · UTC+1 · <a class="nowrap" href="tel:+244943073091">+244&nbsp;943&nbsp;073&nbsp;091</a></p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:suchel@femabras.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>
+              suchel@femabras.com
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/suchel/" target="_blank" rel="noopener">
+              LinkedIn
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+            <a class="btn btn-secondary" href="./assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+              Résumé
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Fernando Brás</p>
+      <p>Plain HTML and CSS: no framework, no trackers, no third-party requests.</p>
+      <p><a href="./public/portuguese-page.html" hreflang="pt" lang="pt">Versão em português</a></p>
+    </div>
+  </footer>
 </body>
 </html>

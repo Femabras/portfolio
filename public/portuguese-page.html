@@ -1,111 +1,336 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt-AO">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando Brás | Portfolio</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./mobile.css" media="screen and (max-width: 501px)">
-    <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 502px) and (max-width: 1069px)">
-    <link rel="stylesheet" href="./same-settings.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernando Brás — Engenheiro web full-stack</title>
+  <meta name="description" content="Fernando Brás, engenheiro web full-stack em Luanda, Angola. Fundador e único engenheiro da Femabrás, uma plataforma web trilingue construída com Next.js, React, TypeScript e Go.">
+  <meta name="author" content="Fernando Brás">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fbfffe" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#001514" media="(prefers-color-scheme: dark)">
+
+  <link rel="canonical" href="https://femabras.github.io/portfolio/public/portuguese-page.html">
+  <link rel="alternate" hreflang="en" href="https://femabras.github.io/portfolio/">
+  <link rel="alternate" hreflang="pt" href="https://femabras.github.io/portfolio/public/portuguese-page.html">
+  <link rel="alternate" hreflang="x-default" href="https://femabras.github.io/portfolio/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Fernando Brás — Engenheiro web full-stack">
+  <meta property="og:description" content="Fundador e único engenheiro da Femabrás: Next.js, React, TypeScript e Go, da primeira ideia até à produção.">
+  <meta property="og:url" content="https://femabras.github.io/portfolio/public/portuguese-page.html">
+  <meta property="og:image" content="https://femabras.github.io/portfolio/assets/images/og-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fernando Brás, engenheiro web full-stack">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fernando Brás",
+    "jobTitle": "Engenheiro web full-stack",
+    "url": "https://femabras.github.io/portfolio/public/portuguese-page.html",
+    "email": "mailto:suchel@femabras.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Luanda", "addressCountry": "AO" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "GD Goenka University" },
+    "sameAs": ["https://www.linkedin.com/in/suchel/", "https://femabras.com"]
+  }
+  </script>
 </head>
-
 <body>
-    <!-- Header content area -->
-    <header>
-        <!-- Navbar content area -->
-        <nav>
-            <p class="header-text-color"><a class="header-text-color" href="./../index.html">Inglês </a>| <a class="header-text-color" href="./../public/portuguese-page.html">Português</a></p>
-            <button>
-                <a class="header-text-color" href="./../assets/pdf/fernando-bras-resume.pdf" download="Fernando Brás - Resumé">
-                    Baixar meu resumé
-                </a>
-            </button>
-        </nav>
-        
-        <!-- Welcome section area -->
-        <section class="welcome-section">
-            
-            <!-- Image tag for home studio image -->
-            <img class="home-studio-image" src="./../assets/images/home-studio.png" alt="Foto do Fernando no Home Studio">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
 
-            <!-- Welcome content container -->
-            <div class="welcome-section-container">
-                <h1 class="header-text-color">Fernando Brás</h1>
-                <h2 class="welcome-section-h2 header-text-color"> 
-                    Desenvolvedor <span class="blue">Mobile</span> & 
-                    <span class="green">Web</span>
-                </h2>
-                <p class="paragraph-bottom-padding header-text-color">Você pode baixar meu currículo em formato PDF.<br>O tamanho do arquivo é aproximadamente de 1MB.</p>
-                <button>
-                    <a class="header-text-color" href="./../assets/pdf/fernando-bras-resume.pdf" download="Fernando Brás - Resumé">Baixar</a>
-                </button>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./portuguese-page.html">
+        <img class="brand-mark" src="../assets/images/favicon.svg" alt="" width="30" height="30">
+        <span>Fernando Brás</span>
+      </a>
+      <nav class="site-nav" aria-label="Secções">
+        <ul>
+          <li><a href="#work">Projecto</a></li>
+          <li><a href="#process">Como trabalho</a></li>
+          <li><a href="#skills">Competências</a></li>
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Língua">
+          <a href="../index.html" hreflang="en" lang="en">EN</a>
+          <span aria-current="true" lang="pt">PT</span>
+        </div>
+        <a class="btn btn-secondary btn-small" href="../assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+          CV (EN)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <p class="eyebrow">Engenheiro web full-stack · Luanda, Angola · Remoto</p>
+            <h1 id="hero-title">Construo produtos web de ponta a ponta, da primeira ideia até à produção.</h1>
+            <p class="hero-lede">Sou o Fernando Brás. Fundei a Femabrás e sou o seu único engenheiro: uma plataforma web trilingue para Angola, feita com Next.js, React, TypeScript e Go, em produção desde Julho de 2026. Assumo cada funcionalidade do contrato da API ao último estado de carregamento, e registo por escrito os prós e contras de cada decisão antes de construir.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">Ler o estudo de caso</a>
+              <a class="btn btn-secondary" href="../assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+                Descarregar CV <span class="btn-meta">PDF em inglês, 1 página</span>
+              </a>
             </div>
-        </section>
-    </header> <!-- End of the header content area -->
-    
-    <!-- Main contents area -->
-    <main>
+          </div>
 
-        <!-- Introduction section area  -->
-        <section class="introduction-section">
-            <img class="passport-photo" src="./../assets/images/fernando-bras-photo.png" alt="Fernando Bras' passport type photo">
-            <h2 class="introduction-h2">Eu sou desenvolvedor mobile e web.</h2>
-            <p class="introduction-paragraph">Sou um profissional dinâmico e motivado, especializado em desenvolvimento mobile e web, com uma sólida formação em ciência da computação e engenharia. Hábil em oferecer um atendimento ao cliente excepcional e em comunicar conceitos técnicos de forma eficaz para diferentes públicos. Apaixonado por utilizar tecnologias modernas para melhorar a experiência do usuário e impulsionar a satisfação dos clientes.</p>
-        </section>
-
-        <!-- Professional skills section area -->
-        <section class="professional-skills-section">
-            <h2 class="professional-skills-h2">Habilidades Profissionais</h2>
-            <div class="professional-skills-container">
-                <div class="skills-children">
-                    <img class="skills-image" src="./../assets/images/web-development.png" alt="Captura de tela de código de desenvolvimento web">
-                    <h3>Desenvolvimento Web</h3>
-                    <p class="paragraph-bottom-padding">Proficiente em HTML, CSS, JavaScript e C#.</p>
-                </div>
-                
-                <div class="skills-children">
-                    <img class="skills-image" src="./../assets/images/mobile-development.png" alt="Demonstração de imagem de desenvolvimento mobile">
-                    <h3>Desenvolvimento Mobile</h3>
-                    <p class="paragraph-bottom-padding">Experiente em Go, Kotlin, Swift, Dart, e frameworks como React e Flutter.</p>
-                </div>
-                
-                <div class="skills-children">
-                    <img class="skills-image" src="./../assets/images/database-management.png" alt="Ícone de imagem de gerenciamento de banco de dados">
-                    <h3>Gerenciamento de Banco de Dados</h3>
-                    <p class="paragraph-bottom-padding">Conhecimento básico de SQL e conceitos de banco de dados.</p>
-                </div>
+          <aside class="profile-card" aria-label="Perfil">
+            <div class="profile-head">
+              <img class="profile-photo" src="../assets/images/fernando-bras-photo.png" alt="Retrato do Fernando Brás" width="72" height="72">
+              <div>
+                <p class="profile-name">Fernando Brás</p>
+                <p class="profile-role">Engenheiro web full-stack</p>
+              </div>
             </div>
-        </section>
+            <dl class="facts">
+              <div><dt>Onde estou</dt><dd>Luanda, Angola (UTC+1)</dd></div>
+              <div><dt>O que procuro</dt><dd>Uma vaga remota de engenharia web</dd></div>
+              <div><dt>Línguas</dt><dd>Português (nativo), inglês; francês, espanhol e hindi básicos</dd></div>
+              <div><dt>Contacto</dt><dd><a href="mailto:suchel@femabras.com">suchel@femabras.com</a></dd></div>
+            </dl>
+          </aside>
+        </div>
 
-        <section class="contact-section">
-            <div class="custom-phone-frame">
-                <div class="custom-phone-screen">
-                    <h2 class="side-spacing">Entre em Contato</h2>
-                    <p class="side-spacing">Se você está procurando um parceiro profissional para transformar a sua visão digital em um aplicativo mobile ou até mesmo criação de uma website em realidade, estou aqui para ajudar. Clique nos botões abaixo para entrar em contato, e vamos discutir como posso agregar valor ao seu projeto e garantir seu sucesso!</p>
-                    <button class="contact-button">
-                        <a class="contact-link" href="tel:+244943073091">Liga já</a>
-                    </button>
-                    <button class="contact-button">
-                        <a class="contact-link" href="mailto:suchel@femabras.com">envia e-mail</a>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
+        <ul class="stats">
+          <li><span class="stat-value">15 semanas</span><span class="stat-label">do primeiro commit à produção</span></li>
+          <li><span class="stat-value">16 versões</span><span class="stat-label">publicadas nas primeiras sete semanas</span></li>
+          <li><span class="stat-value">3 línguas</span><span class="stat-label">português, inglês e francês, verificadas na integração contínua</span></li>
+          <li><span class="stat-value">50+ ADR</span><span class="stat-label">decisões importantes, escritas antes do código</span></li>
+        </ul>
+      </div>
+    </section>
 
-    <!-- Footer content area -->
-    <footer>
-        <small>
-            <div class="footer-link-container">
-                <a class="footer-font-size" href="https://www.linkedin.com/in/suchel/" target="_blank">LinkedIn</a>
-                <a class="footer-font-size" href="https://www.tiktok.com/@femabras" target="_blank">TikTok</a>
-                <a class="footer-font-size" href="./femabras-page.html">Website</a>
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="case-head">
+          <div>
+            <p class="eyebrow">Estudo de caso</p>
+            <h2 class="section-title" id="work-title">Femabrás</h2>
+            <p class="section-intro">Uma plataforma web pensada primeiro em português para o dia-a-dia em Angola. Já em produção: dicas de futebol, quatro jogos no navegador, incluindo xadrez em tempo real, um painel para tipsters parceiros e uma consola de administração. Construído e em pré-lançamento: um localizador de ATM com mapa próprio, o primeiro passo para as pessoas indicarem que caixas perto delas têm dinheiro.</p>
+          </div>
+          <a class="btn btn-secondary" href="https://femabras.com" target="_blank" rel="noopener">
+            Visitar femabras.com
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            <span class="visually-hidden">(abre num novo separador)</span>
+          </a>
+        </div>
+
+        <dl class="case-meta">
+          <div><dt>Papel</dt><dd>Fundador e único engenheiro: produto, design, frontend, backend, infra-estrutura</dd></div>
+          <div><dt>Cronologia</dt><dd>Primeiro commit em Março de 2026, em produção desde 6 de Julho de 2026</dd></div>
+          <div><dt>Tecnologias</dt><dd>Next.js 16, React 19, TypeScript, Tailwind CSS 4, Go, PostgreSQL, Redis</dd></div>
+          <div><dt>Línguas</dt><dd>Português (principal), inglês, francês</dd></div>
+        </dl>
+
+        <h3 class="subhead">Destaques</h3>
+        <ul class="cards">
+          <li class="card">
+            <span class="status status-live">Em produção</span>
+            <h3>Xadrez online em tempo real</h3>
+            <p>Com um link de convite, dois amigos jogam no navegador. Os Server-Sent Events levam cada mudança de estado aos dois jogadores e a quem estiver a assistir, e um motor no servidor é a única fonte de verdade: o cliente envia apenas a jogada, e o servidor valida-a, aplica-a e difunde a nova posição. A jogada de cada um aparece de imediato e é revertida se o servidor a rejeitar.</p>
+            <ul class="chips"><li>React</li><li>chess.js</li><li>SSE</li><li>Go</li><li>notnil/chess</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Em produção</span>
+            <h3>Um motor de previsões que presta contas ao backtest</h3>
+            <p>Um modelo de Poisson em Go, com a força das equipas nas ligas e ratings Elo nos torneios, calcula resultados, totais de golos e ambas marcam. Um backtest avalia palpites passados com o próprio código de produção. Os palpites múltiplos de liga acertaram 39–45% contra 55–67% previstos, por isso foram desligados; os de torneio acertaram 59,8% contra 56,7% e ficaram.</p>
+            <ul class="chips"><li>Go</li><li>PostgreSQL</li><li>Asynq</li><li>Backtesting</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Em produção</span>
+            <h3>Lançamentos em que se pode confiar</h3>
+            <p>Cada push corre todas as verificações, constrói as imagens Docker para o GHCR e publica num ambiente de testes protegido por palavra-passe. A produção promove exactamente a imagem aprovada nesse ambiente, por um botão ou por uma tag de versão, e a integração contínua recusa uma tag sem entrada no registo de alterações.</p>
+            <ul class="chips"><li>GitHub Actions</li><li>Docker</li><li>GHCR</li><li>Caddy</li><li>Hetzner</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-live">Em produção</span>
+            <h3>Três línguas, nenhuma chave em bruto</h3>
+            <p>Português por omissão, mais inglês e francês, com metadados por língua, hreflang e sitemap. Quando duas chaves sem tradução chegaram ao tabuleiro de xadrez em todas as línguas, a verificação de paridade não as detectou, porque faltavam nos três ficheiros. Agora, uma verificação de uso faz falhar a integração contínua sempre que um texto chamado pelo código falta em alguma língua.</p>
+            <ul class="chips"><li>next-intl</li><li>Node</li><li>SEO</li><li>CI</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-pre">Pré-lançamento</span>
+            <h3>Um mapa sem factura de mapas</h3>
+            <p>O localizador de ATM desenha com MapLibre GL a partir de um mapa vectorial só de Angola, alojado por mim: um arquivo PMTiles de 210 MB no Cloudflare R2, lido por pedidos HTTP parciais, sem nenhuma API comercial de mapas para pagar ou de que depender. A localização do visitante é arredondada para cerca de 1 km antes de ser enviada, e nunca é guardada.</p>
+            <ul class="chips"><li>MapLibre GL</li><li>PMTiles</li><li>Cloudflare R2</li></ul>
+          </li>
+          <li class="card">
+            <span class="status status-pre">Pré-lançamento</span>
+            <h3>Sessões que não caem</h3>
+            <p>Os tokens de acesso duram 15 minutos. O proxy do Next.js renova-os antes de expirarem e faz a rotação do refresh token, com uma janela de tolerância de 30 segundos para pedidos já em curso. O cliente partilha uma única renovação entre chamadas simultâneas e repete uma chamada rejeitada uma vez, mas nunca nos endpoints de autenticação nem na área de parceiros, onde o início de sessão bloqueia após falhas repetidas e uma repetição contaria como mais uma falha.</p>
+            <ul class="chips"><li>Proxy do Next.js</li><li>JWT</li><li>Go</li><li>PostgreSQL</li></ul>
+          </li>
+        </ul>
+
+        <h3 class="subhead">Também construí</h3>
+        <ul class="also">
+          <li><span class="status status-live">Em produção</span><span>Um painel para tipsters parceiros, com TanStack Query para o estado do servidor e Zustand para os rascunhos e a sessão</span></li>
+          <li><span class="status status-pre">Pré-lançamento</span><span>Streaming de música privado: um URL pré-assinado do R2 gerado a cada reprodução e um único leitor de áudio nativo que cumpre as regras de reprodução do iOS</span></li>
+          <li><span class="status status-live">Em produção</span><span>Snake, Match-3 com doze níveis e Jogo do Galo contra quatro adversários controlados pelo computador</span></li>
+          <li><span class="status status-pre">Pré-lançamento</span><span>Um assistente Gemini atrás de um encaminhador baseado em regras, com limites diários por conta e para toda a plataforma; nenhuma mensagem ou resposta fica registada</span></li>
+          <li><span class="status status-live">Em produção</span><span>Uma camada de conformidade: aviso de cookies na primeira visita e aceitação versionada dos termos e da política de privacidade no registo</span></li>
+          <li><span class="status status-pre">Pré-lançamento</span><span>Um criador de CV cujos rascunhos nunca saem do dispositivo do visitante</span></li>
+          <li><span class="status status-live">Em produção</span><span>Uma consola de administração para parceiros, mensagens, feedback, produtos e carregamentos, cuja Content-Security-Policy não permite scripts inline</span></li>
+          <li><span class="status status-pre">Pré-lançamento</span><span>Tokens de design para tipografia, densidade e movimento que respeitam prefers-reduced-motion</span></li>
+        </ul>
+
+        <article class="story" aria-labelledby="story-title">
+          <p class="eyebrow">Notas de depuração</p>
+          <h3 id="story-title">O botão de início de sessão que só falhava na primeira visita</h3>
+          <dl class="story-grid">
+            <div>
+              <dt>Sintoma</dt>
+              <dd>O início de sessão com Google falhava para uns visitantes e funcionava para outros. O registo de produção mostrava os dois resultados na mesma hora.</dd>
             </div>
             <div>
-                <p class="footer-font-size">&#169 Fernando Brás. </p>
+              <dt>O que o tornou difícil</dt>
+              <dd>Funcionava sempre que se chegava a /login navegando pelo site. Só falhava quando /login ou /register era a primeira página carregada, que é exactamente o caminho que os testes feitos de dentro da aplicação nunca percorrem.</dd>
             </div>
-        </small>
-    </footer>
+            <div>
+              <dt>Causa</dt>
+              <dd>O link vinha de uma função que escolhe a origem da API verificando <code>typeof window</code>. Isso responde a onde o código está a correr, que é a pergunta certa para <code>fetch</code> e a errada para um <code>href</code>. No primeiro carregamento, renderizado no servidor, o nome interno do contentor Docker ficava escrito na página, e nenhum navegador o consegue alcançar. O URL também não tinha o prefixo <code>/api</code> com que o cliente OAuth está registado.</dd>
+            </div>
+            <div>
+              <dt>Correcção</dt>
+              <dd>Uma origem pública da API para tudo o que o navegador resolve, usada pelos dois links. As 34 chamadas a <code>fetch</code> mantêm a função de modo duplo, que agora tem um comentário a indicar onde nunca deve aparecer.</dd>
+            </div>
+          </dl>
+          <p class="story-lesson">O que aprendi: perguntar onde um URL vai ser resolvido, e não onde corre o código que o constrói.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <p class="eyebrow">Processo</p>
+        <h2 class="section-title" id="process-title">Como trabalho</h2>
+        <p class="section-intro">Os mesmos hábitos em cada alteração, seja uma correcção de uma linha ou uma nova área do produto.</p>
+        <ol class="principles">
+          <li>
+            <h3>Decidir antes de construir</h3>
+            <p>Cada escolha importante torna-se um registo de decisão de arquitectura, com as opções, os seus prós e contras e uma recomendação, escrito antes do código. A Femabrás tem mais de 50.</p>
+          </li>
+          <li>
+            <h3>Uma só verificação, local e na integração contínua</h3>
+            <p>gofmt, go vet, testes Go e govulncheck, depois a verificação de i18n, os testes do frontend, lint e um build de produção, do mais rápido para o mais lento, para que uma falha apareça em segundos.</p>
+          </li>
+          <li>
+            <h3>Corrigir a causa</h3>
+            <p>Uma correcção nomeia a causa real. Se a correcção verdadeira estiver fora do âmbito, fica escrita, em vez de escondida atrás de um remendo.</p>
+          </li>
+          <li>
+            <h3>Com apoio de IA, sob a minha responsabilidade</h3>
+            <p>Escrevo a especificação e o ADR, o Claude Code implementa em modo de planeamento, e reviso cada diff antes do commit. A documentação segue no mesmo commit que a alteração.</p>
+          </li>
+        </ol>
+
+        <h3 class="subhead">Como a Femabrás se organiza</h3>
+        <ol class="layers">
+          <li><span class="layer-name">Edge</span><p>Cloudflare para DNS, proxy e TLS, com o R2 a guardar imagens, tiles do mapa e áudio privado</p></li>
+          <li><span class="layer-name">Web</span><p>Caddy à frente do Next.js 16 (App Router, renderização no servidor, next-intl, proxy de sessão), React 19, TypeScript e Tailwind CSS 4</p></li>
+          <li><span class="layer-name">API</span><p>Go com Gin: uma API REST com sessões JWT, limites de pedidos por rota e Server-Sent Events para jogos ao vivo, além de tarefas em segundo plano com Asynq</p></li>
+          <li><span class="layer-name">Dados</span><p>PostgreSQL através do GORM, e Redis para filas, limites de pedidos e estado de curta duração</p></li>
+          <li><span class="layer-name">Entrega</span><p>GitHub Actions para o GHCR, depois o ambiente de testes, depois a produção na Hetzner com Docker Compose; cópias de segurança com restic no Backblaze B2</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap">
+        <p class="eyebrow">Ferramentas</p>
+        <h2 class="section-title" id="skills-title">Competências</h2>
+        <p class="section-intro">As ferramentas por trás da Femabrás, agrupadas pelo sítio onde actuam.</p>
+        <div class="skill-groups">
+          <section class="skill-group" aria-labelledby="sk-frontend">
+            <h3 id="sk-frontend">Frontend</h3>
+            <ul class="chips"><li>React 19</li><li>Next.js 16</li><li>TypeScript</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Tailwind CSS 4</li><li>TanStack Query</li><li>Zustand</li><li>next-intl</li><li>MapLibre GL</li><li>Server-Sent Events</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-backend">
+            <h3 id="sk-backend">Backend e dados</h3>
+            <ul class="chips"><li>Go</li><li>Gin</li><li>GORM</li><li>Asynq</li><li>Desenho de APIs REST</li><li>PostgreSQL</li><li>Redis</li><li>Sessões JWT</li><li>OAuth do Google</li><li>Limites de pedidos</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-delivery">
+            <h3 id="sk-delivery">Entrega</h3>
+            <ul class="chips"><li>GitHub Actions</li><li>Docker Compose</li><li>GHCR</li><li>Caddy</li><li>Cloudflare</li><li>R2</li><li>Hetzner</li><li>restic</li><li>Backblaze B2</li></ul>
+          </section>
+          <section class="skill-group" aria-labelledby="sk-practice">
+            <h3 id="sk-practice">Prática</h3>
+            <ul class="chips"><li>Acessibilidade</li><li>i18n</li><li>SEO</li><li>node:test</li><li>Testes em Go</li><li>Verificações na CI</li><li>ADR</li><li>Claude Code</li><li>Adobe Illustrator</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Sobre</p>
+          <h2 class="section-title" id="about-title">Sobre mim</h2>
+          <p>Estudei Ciência da Computação e Engenharia na GD Goenka University, em Gurugram, na Índia, e formei-me em 2019. Hoje construo a partir de Luanda, sobretudo para pessoas em telemóveis e com pacotes de dados limitados, o que me mantém atento ao peso das páginas, aos estados de carregamento e ao que acontece quando um pedido falha.</p>
+          <p>Antes do código, houve música. Produzo música há anos no Logic Pro X e desenho no Adobe Illustrator. As duas coisas ensinaram-me que os pequenos detalhes decidem se algo parece certo, e é essa a parte do trabalho web de que mais gosto.</p>
+        </div>
+        <figure class="about-figure">
+          <img src="../assets/images/home-studio.webp" alt="O Fernando à secretária, a produzir música num teclado em frente a um monitor" width="606" height="614" loading="lazy" decoding="async">
+          <figcaption>A minha secretária também é estúdio de música.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contacto</p>
+            <h2 class="section-title" id="contact-title">Vamos conversar</h2>
+            <p class="section-intro">Procuro uma vaga remota de engenharia web numa equipa de produto que lança com frequência. O e-mail é a melhor forma de me contactar.</p>
+            <p class="contact-note">Luanda, Angola · UTC+1 · <a class="nowrap" href="tel:+244943073091">+244&nbsp;943&nbsp;073&nbsp;091</a></p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:suchel@femabras.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>
+              suchel@femabras.com
+            </a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/suchel/" target="_blank" rel="noopener">
+              LinkedIn
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              <span class="visually-hidden">(abre num novo separador)</span>
+            </a>
+            <a class="btn btn-secondary" href="../assets/pdf/fernando-bras-resume.pdf" download="Fernando-Bras-Resume.pdf">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 20h14"/></svg>
+              CV (EN)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Fernando Brás</p>
+      <p>HTML e CSS simples: sem framework, sem rastreadores, sem pedidos a terceiros.</p>
+      <p><a href="../index.html" hreflang="en" lang="en">English version</a></p>
+    </div>
+  </footer>
 </body>
 </html>
