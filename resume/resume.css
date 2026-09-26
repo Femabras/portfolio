@@ -1,0 +1,180 @@
+/*
+  Styles for resume/resume.html, the source of the CV PDF. One US Letter page:
+  for A4, change `size: Letter` in @page and the .page width and height to
+  210mm by 297mm, then check the print preview is still one page.
+*/
+
+/* Static weights rather than the variable font: Chromium embeds a variable
+   font in a PDF as Type 3 glyphs, which some applicant-tracking parsers
+   read badly. Static files embed as ordinary TrueType. */
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-500-normal.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/inter-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+/* The owner's palette: #001514 ink on #fbfffe paper. Pure black and pure
+   white are never used. */
+:root {
+  --paper: #fbfffe;
+  --ink: #001514;
+  --text: #16302d;
+  --muted: #4a6360;
+  --accent: #04706b;
+  --rule: #cddbd8;
+  --desk: #e4ecea;
+}
+
+@page { size: Letter; margin: 0; }
+
+* { box-sizing: border-box; }
+
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+body {
+  margin: 0;
+  background: var(--desk);
+  color: var(--text);
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 9.35pt;
+  line-height: 1.37;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 8.5in;
+  height: 11in;
+  margin: 24px auto;
+  padding: 0.46in 0.6in 0.4in;
+  background: var(--paper);
+  box-shadow: 0 1px 3px rgba(0, 21, 20, 0.12), 0 8px 24px rgba(0, 21, 20, 0.08);
+  overflow: hidden;
+}
+
+@media print {
+  body { background: var(--paper); }
+  .page { margin: 0; box-shadow: none; }
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* Header */
+.name {
+  margin: 0;
+  color: var(--ink);
+  font-size: 22pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+.role {
+  margin: 4pt 0 0;
+  color: var(--accent);
+  font-size: 10.6pt;
+  font-weight: 500;
+}
+/* Two fixed rows rather than one wrapping row, so a separator never starts
+   a line. */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6pt 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 8.7pt;
+}
+.contact + .contact { margin-top: 1.5pt; }
+.contact li + li::before {
+  content: "·";
+  margin: 0 6pt;
+  color: var(--rule);
+  font-weight: 700;
+}
+
+/* Sections. Headings stay in plain case with no letter-spacing: tracked
+   capitals come out of the PDF as "EX P ER I EN C E", and a parser that
+   cannot read the heading cannot find the section. */
+section { margin-top: 10.5pt; }
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 8pt;
+  margin: 0 0 5pt;
+  color: var(--accent);
+  font-size: 10.2pt;
+  font-weight: 600;
+}
+h2::after {
+  content: "";
+  flex: 1;
+  height: 0.75pt;
+  background: var(--rule);
+}
+p { margin: 0; }
+
+/* Skills */
+.skills {
+  display: grid;
+  grid-template-columns: 0.95in 1fr;
+  gap: 2pt 10pt;
+  margin: 0;
+}
+.skills dt { color: var(--ink); font-weight: 600; }
+.skills dd { margin: 0; }
+
+/* Experience */
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12pt;
+}
+.entry-title { margin: 0; color: var(--ink); font-size: 10.2pt; font-weight: 600; }
+.entry-title span { color: var(--text); font-weight: 400; }
+.dates { color: var(--muted); font-size: 8.8pt; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.entry-meta { margin: 1pt 0 0; color: var(--muted); font-size: 8.8pt; }
+.entry-lede { margin: 4pt 0 0; }
+
+ul.points { margin: 4.5pt 0 0; padding: 0; list-style: none; }
+ul.points li {
+  position: relative;
+  margin-top: 2.6pt;
+  padding-left: 11pt;
+}
+ul.points li::before {
+  content: "";
+  position: absolute;
+  left: 1pt;
+  top: 0.58em;
+  width: 4pt;
+  height: 4pt;
+  border-radius: 1pt;
+  background: var(--accent);
+}
+.label { color: var(--ink); font-weight: 600; }
+
+.inline-list { margin: 0; }
